@@ -6,8 +6,6 @@ Retrieve the full name of each author and calculate the total number of days the
 ## SQL Query
 
 ```sql
-SELECT 
-    CONCAT_WS(' ', `first_name`, `last_name`) AS 'Full Name',
-    TIMESTAMPDIFF(DAY, `born`, `died`) AS 'Days Lived'
-FROM
-    `authors`;
+SELECT CONCAT_WS(' ', `first_name`, `last_name`) AS 'Full Name',
+TIMESTAMPDIFF(DAY, `born`, `died`) AS 'Days Lived'
+FROM `authors`;
