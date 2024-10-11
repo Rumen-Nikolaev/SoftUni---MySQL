@@ -7,5 +7,5 @@ Calculate the total cost of all books in the `books` table, rounding the result 
 
 ```sql
 SELECT
-    ROUND(SUM(cost), 2) AS cost
+ROUND(SUM(cost), 2) AS cost
 FROM books;
