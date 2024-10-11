@@ -7,7 +7,7 @@ Retrieve and modify the titles of books from the `books` table. The modified tit
 
 ```sql
 SELECT
-    CONCAT('***', SUBSTRING(title, 4)) AS title
+CONCAT('***', SUBSTRING(title, 4)) AS title
 FROM books
 WHERE SUBSTRING(title, 1, 3) = 'The'
 ORDER BY id;
